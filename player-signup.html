@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="forwat.js"></script>
+    <title>Sign Up/Sign In</title>
+</head>
+<body style="background-color: black">
+<div style="background-color: #312b56; padding: 15px">
+    <h1 class="text-center" style="color: white">Create your player profile</h1>
+</div>
+<br>
+<br>
+<br>
+<div class="f-width">
+    <form action="process.php" method="post">
+    <div class="card"
+         style="padding: 20px 30px; width: 420px;display: block; margin: 0px auto;background-color: #e4eedd">
+        <input class="input f-width mb-10" placeholder="First name" type="text" name="playerName">
+        <input class="input f-width mb-10" placeholder="Second name" type="text" name="playerSName">
+        <input class="input f-width mb-10" placeholder="Email" type="text" name="email">
+        <input class="input f-width mb-10" id="password1" placeholder="Password" type="password" name="playerPW">
+        <input class="input f-width mb-10" id="password2" placeholder="Verify password" type="password" name="playerPW">
+        <br>
+        <br>
+        <button class="btn f-width h-pointer" name="btnSignUp" onsubmit="validate() ">Sign Up</button>
+        <p id="sign-up"></p>
+        <br>
+        <br>
+        <div class="text-center">
+            <a style="text-align: center; color: #ce185b" class="h-pointer" href="../IT20238858/Log in.html">or login</a>
+        </div>
+    </div>
+    </form>
+</div>
+</body>
+</html>

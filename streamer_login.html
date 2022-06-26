@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log In</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="forwat.js"></script>
+<title>Log In</title>
+</head>
+<body style="background-color: black">
+<div style="background-color: #312b56; padding: 15px">
+    <h1 class="text-center" style="color: white">Log in to player profile</h1>
+</div>
+<br>
+<br>
+<br>
+<div class="f-width">
+    <form action="streamer_login.php" method="post">
+        <div class="card"
+             style="padding: 20px 30px; width: 420px;display: block; margin: 0px auto;background-color: #e4eedd">
+            <input class="input f-width mb-10" placeholder="E-mail" type="email" name="userEmail">
+            <input class="input f-width mb-10" placeholder="Password" type="password" name="pw">
+            <br>
+            <button class="btn f-width h-pointer" name="btnSignUp" onsubmit="validate() ">Log In</button>
+            <p id="log-in"></p>
+            <br>
+            <br>
+            <div class="text-center">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

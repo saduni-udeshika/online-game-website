@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="forwat.js"></script>
+    <title>Home</title>
+</head>
+<body>
+
+<!--Nav start-->
+<div class="nav">
+    <ul class="nav-container">
+        <li class="nav-item"><img src="assets/img/logo.jpg" class="nav-logo"></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-us.html">About-Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="../IT20786878/player profile.html">PLAYER PROFILE</a></li>
+        <li class="nav-item"><a class="nav-link" href="../IT20905422/multiplayer.html">MULTIPLAYER</a></li>
+        <li class="nav-item"><a class="nav-link" href="../IT20238858/settings.html">SETTINGS</a></li>
+        <li class="nav-item"><a class="nav-link" href="../IT20232504/Contact us.html">CONTACT US</a></li>
+        <li style="float: right; margin-right: 25px">
+            <div class="search-bar">
+                <input type="text" class="nav-search input">
+                <i class="fa fa-search fa-1x h-pointer" id="user" style="color: white;"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--Nav end-->
+
+<!--Cover image start-->
+<div class="cover">
+    <div class="cover-container">
+        <img src="assets/img/bg.jpg" style="" class="cover-image">
+        <div class="cover-text">
+            Just play.Have fun.Enjoy!
+            <br><br>
+            <button class="button" onclick="logFunction()">Log In as a Streamer</button>
+            <button class="button" onclick="clickFunction()">Log In as a Player</button>
+
+        </div>
+    </div>
+</div>
+<!--Cover image end-->
+
+<br>
+<div style="padding: 30px" class="flex-row">
+    <div style="margin-right: 30px">
+        <a href="event.html"><img src="assets/img/events.jpg" class="b-shadow"></a>
+    </div>
+    <div class="flex-child" style="display: block;margin: 0px auto">
+        <img class="b-shadow" src="assets/img/game.jpg" style="width: 100%;border-radius: 4px;height: 700px;object-fit: cover" id="loadOut">
+        <div class="b-shadow hidden" id="inventory" style="border-radius: 4px; width: 100%;height: 700px;">
+            <ul style="padding: 20px 0px;">
+                <li class="inventory-container list-none" style="background-color: white">
+                    <div class="flex-row">
+                        <div class="text-center f-23" style="width: 160px">
+                        </div>
+                        <div style="width: 160px">
+
+                        </div>
+                        <div class="f-23" style="width: 230px">
+                            Item
+                        </div>
+                        <div class="flex-child f-23">
+                            Amount
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul id="inventoryListUl" style="padding: 20px 0px;" >
+            </ul>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="bottom-navigator">
+            <div class="bottom-nav-container">
+                <li class="bottom-nav-item h-pointer" onclick="switchToLoadOut()">LOADOUT</li>
+                <li class="bottom-nav-item h-pointer">CLAN</li>
+                <li class="bottom-nav-item h-pointer">LEADER BOARD</li>
+                <li class="bottom-nav-item h-pointer" onclick="switchToInventory()">INVENTORY</li>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-column" style="margin-left: 30px">
+        <div class="card l-button b-shadow h-pointer">
+            <p class="l-button-text" style="margin-top: 70px;">
+                Ranked <br>Match
+            </p>
+        </div>
+        <div class="card l-button b-shadow h-pointer" style="background-color: #272244">
+            <p class="l-button-text" style="margin-top: 85px;">
+                Multiplayer
+            </p>
+        </div>
+    </div>
+</div>
+<br>
+<!--Footer start-->
+<div class="footer">
+    <div class="footer-container">
+        <li class="footer-item h-pointer">TERMS AND CONDITIONS</li>
+        <li class="footer-item h-pointer">PRIVACY POLICY</li>
+        <li class="footer-item-r h-pointer"><i class="fa fa-facebook fa-1x h-pointer" style="color: white;"></i></li>
+        <li class="footer-item-r h-pointer"><i class="fa fa-instagram fa-1x h-pointer" style="color: white;"></i></li>
+        <li class="footer-item-r h-pointer"><i class="fa fa-twitter fa-1x h-pointer" style="color: white;"></i></li>
+    </div>
+</div>
+<!--Footer end-->
+</body>
+</html>
